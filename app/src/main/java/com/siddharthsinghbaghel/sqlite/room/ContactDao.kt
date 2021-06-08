@@ -10,6 +10,8 @@ interface ContactDao {
     suspend fun insertContact(contact: ContactEntity)
     @Delete
     suspend fun deleteContact(contact: ContactEntity)
+    @Update
+    suspend fun updateContact(contact: ContactEntity)
     @Query("select * from contacts order by `First Name` ASC")
     fun getAllContacts(): LiveData<List<ContactEntity>>
 

@@ -29,30 +29,16 @@
                                     >
 
 
-                                    <com.google.android.material.textfield.TextInputLayout
-                                        android:id="@+id/tilContactName"
-                                        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
-                                        android:layout_width="match_parent"
-                                        android:layout_height="wrap_content"
-                                        >
-
-                                        <androidx.appcompat.widget.AppCompatTextView
+                                    <TextView
                                             android:id="@+id/tvContactName"
                                             android:layout_width="match_parent"
                                             android:layout_height="wrap_content"
-                                            android:inputType="numberDecimal"
+                                            android:inputType="text"
                                             tools:text="Siddharth Singh"
-
                                             android:textSize="16sp" />
-                                    </com.google.android.material.textfield.TextInputLayout>
 
-                                    <com.google.android.material.textfield.TextInputLayout
-                                        android:id="@+id/tilContactNo"
-                                        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
-                                        android:layout_width="match_parent"
-                                        android:layout_height="wrap_content">
 
-                                        <androidx.appcompat.widget.AppCompatTextView
+                                     <TextView
                                             android:id="@+id/tvContactNo"
                                             android:layout_width="match_parent"
                                             android:layout_height="wrap_content"
@@ -60,42 +46,19 @@
                                             tools:text="9119148863"
 
                                             android:textSize="16sp" />
-                                    </com.google.android.material.textfield.TextInputLayout>
 
-                                    <com.google.android.material.textfield.TextInputLayout
-                                        android:id="@+id/tilId"
-                                        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
-                                        android:layout_width="match_parent"
-                                        android:layout_height="wrap_content">
-
-                                        <androidx.appcompat.widget.AppCompatTextView
-                                            android:id="@+id/tvId"
-                                            android:layout_width="match_parent"
-                                            android:layout_height="wrap_content"
-                                            android:inputType="numberDecimal"
-                                            tools:text="9119148863"
-
-                                            android:textSize="16sp" />
-                                    </com.google.android.material.textfield.TextInputLayout>
                                 </LinearLayout>
 
 
                 <ImageView
                     android:id="@+id/btnDelete"
-                    android:layout_width="40dp"
-                    android:layout_height="40dp"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:layout_marginTop="5dp"
                     android:src="@drawable/ic_delete"
-                    android:layout_weight="0.1"
-                    android:layout_marginTop="32dp"
+                    android:layout_weight="0.5"
                     />
-                <ImageView
-                    android:id="@+id/btnUpdate"
-                    android:layout_width="40dp"
-                    android:layout_height="40dp"
-                    android:src="@drawable/ic_update"
-                    android:layout_weight="0.1"
-                    android:layout_marginTop="32dp"
-                    />
+
             </LinearLayout>
 
     </androidx.cardview.widget.CardView>

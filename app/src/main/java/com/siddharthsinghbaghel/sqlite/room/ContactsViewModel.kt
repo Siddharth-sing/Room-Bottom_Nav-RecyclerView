@@ -21,6 +21,9 @@ class ContactsViewModel(application: Application): AndroidViewModel(application)
     fun deleteContact(contact:ContactEntity) = viewModelScope.launch(Dispatchers.IO) {
         repository.delete(contact)
     }
+    fun updateContact(contact:ContactEntity) = viewModelScope.launch(Dispatchers.IO) {
+        repository.update(contact)
+    }
 
     fun insertContact(contact:ContactEntity) = viewModelScope.launch(Dispatchers.IO) {
         repository.insert(contact)

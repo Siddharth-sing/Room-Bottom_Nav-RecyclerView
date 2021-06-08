@@ -4,6 +4,7 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import android.widget.ImageView
+import android.widget.TextView
 import androidx.appcompat.widget.AppCompatTextView
 import androidx.recyclerview.widget.RecyclerView
 import com.siddharthsinghbaghel.sqlite.nav_fragments.ContactsFragment
@@ -18,11 +19,10 @@ class ContactsAdapter(private val context: ContactsFragment, private val listene
 
     inner class ContactsViewHolder(view: View): RecyclerView.ViewHolder(view){
 
-         val contactName: AppCompatTextView = view.tvContactName
-         val contactNo: AppCompatTextView = view.tvContactNo
+         val contactName: TextView = view.tvContactName
+         val contactNo: TextView = view.tvContactNo
          val btnDelete: ImageView = view.btnDelete
-         val btnUpdate: ImageView = view.btnUpdate
-         val tvId: AppCompatTextView = view.tvId
+
     }
 
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): ContactsViewHolder {
@@ -40,7 +40,7 @@ class ContactsAdapter(private val context: ContactsFragment, private val listene
            val currentContact = allContacts[position]
            holder.contactName.text = currentContact.name
            holder.contactNo.text = currentContact.phoneNo
-           holder.tvId.text = currentContact.id.toString()
+
 
            holder.btnDelete.setOnClickListener{
                     listener.onItemClicked(allContacts[position])

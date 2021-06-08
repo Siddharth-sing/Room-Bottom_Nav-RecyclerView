@@ -13,6 +13,7 @@ import com.siddharthsinghbaghel.sqlite.ContactsAdapter
 import com.siddharthsinghbaghel.sqlite.R
 import com.siddharthsinghbaghel.sqlite.room.ContactEntity
 import com.siddharthsinghbaghel.sqlite.room.ContactsViewModel
+import kotlinx.android.synthetic.main.contact_item.*
 import kotlinx.android.synthetic.main.fragment_contacts.*
 import kotlinx.android.synthetic.main.fragment_contacts.view.*
 
@@ -49,8 +50,12 @@ class ContactsFragment : Fragment(),ContactsAdapter.IContactRVAdapter {
     }
 
     override fun onItemClicked(contact: ContactEntity) {
-        Toast.makeText(context, "onItemClicked", Toast.LENGTH_SHORT).show()
-        viewModel.deleteContact(contact)
+
+            Toast.makeText(context, "onItemClicked Delete", Toast.LENGTH_SHORT).show()
+            viewModel.deleteContact(contact)
+
+
+
     }
 
 
